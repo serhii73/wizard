@@ -3,14 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>World bank</title>
-    <style>
-        .active {
-            fill: blue !important;
-        }
-
-        /*.datamaps-key dt, .datamaps-key dd {float: none !important;}
-        .datamaps-key {right: -50px; top: 0;}*/
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
 <h1>World Bank data</h1>
@@ -92,7 +85,6 @@
                 return ['<div class="hoverinfo">',
                     '<strong>', geo.properties.name, '</strong>',
                     '<br>The sum of all projects: <strong>', data.numberOfThings, '</strong>',
-                    '<br>Somedata: <strong>', geo.id, '</strong>',
                     '<br>Project name and lend project cost: <strong>', data_project_cost_list.join('\n'), '</strong>',
                     '</div>'].join('');
             }
