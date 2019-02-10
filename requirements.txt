@@ -1,7 +1,7 @@
 aspy.yaml==1.1.2
 cached-property==1.5.1
 cfgv==1.4.0
-click==6.7
+click==7.0
 Flask==1.0.2
 Flask-PyMongo==2.0.0
 identify==1.1.0
